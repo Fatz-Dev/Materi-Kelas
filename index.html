@@ -1,4 +1,42 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello, World!</title>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <style type="text/css" media="all">
+    body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Pertemuan 1</h1>
+  <p id="currentTime"></p>
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/key/1htnl448wAV5UK" width="610" height="515"
+    frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+    style="border: var(--border-1) solid #CCC; border-width:1px; margin-bottom:5px; max-width:100%;"
+    allowfullscreen></iframe>
+  <div style="margin-bottom:5px">
+    <strong><a href="https://www.slideshare.net/slideshow/pertemuan-1-pemrograman-dasar/38271611" title="pertemuan-1-pemrograman-dasar" target="_blank">pertemuan-1-pemrograman-dasar</a></strong>from
+    <strong><a href="https://www.slideshare.net/dismonimo" target="_blank">Disma Ariyanti W</a></strong></div>
+  <script>
+    function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
+  </script>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -111,4 +149,4 @@
 
 </body>
 
-</html>
+</html> -->
